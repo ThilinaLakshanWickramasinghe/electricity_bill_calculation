@@ -1,2 +1,2 @@
 # Electricity-bill-calculation
-For Calculate monthly Electricity bills
+For Calculate monthly Electricity bills using C++
