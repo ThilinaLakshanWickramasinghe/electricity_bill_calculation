@@ -1,4 +1,5 @@
-#include <iostream.h>
+#include <iostream>
+#include <conio.h>
 #include <fstream>
 #include <string>
 #include <windows.h>
@@ -107,7 +108,8 @@ int main()
 	
 		char text[500];
   		fstream file;
-  		file.open ("bill.txt", ios::out | ios::in );
+	        // write operation in file
+  		file.open ("bill.txt", ios::out);
 		cin.getline(text, sizeof(text)); 
 		 
 		file <<"****************************************"<< endl;
@@ -127,5 +129,11 @@ int main()
 		file <<"* - - - - - - - - - - - - -END - - - - - - - - - - - *"<< endl;
 	
  		file.close();
+	        // to hold the console window
+	        if (1){
+                int ch;
+                printf("\n\t\t\t\t\tPress any key to exit...\n");
+                ch = getch();
+                }
   	return 0;
 	}
